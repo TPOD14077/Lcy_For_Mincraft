@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "lcy_for_mincraft",
+  "version": "${version}",
+  "name": "Lcy_For_Mincraft",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/qwert/Lcy_For_Mincraft"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/lcy_for_mincraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tpod.lcy_for_mincraft.client.Lcy_For_MincraftClient"
+    ],
+    "main": [
+      "tpod.lcy_for_mincraft.Lcy_For_Mincraft"
+    ]
+  },
+  "mixins": [
+    "lcy_for_mincraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
